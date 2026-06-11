@@ -16,7 +16,7 @@
 
 pluginManagement {
   repositories {
-    google {
+    maven(url = "https://maven.google.com") {
       content {
         includeGroupByRegex("com\\.android.*")
         includeGroupByRegex("com\\.google.*")
@@ -39,7 +39,7 @@ dependencyResolutionManagement {
   repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
   repositories {
     //        mavenLocal()
-    google()
+    maven(url = "https://maven.google.com")
     mavenCentral()
   }
 }
